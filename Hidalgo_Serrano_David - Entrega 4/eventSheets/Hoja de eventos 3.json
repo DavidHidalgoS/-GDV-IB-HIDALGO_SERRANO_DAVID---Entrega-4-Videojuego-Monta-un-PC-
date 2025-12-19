@@ -1,0 +1,576 @@
+{
+	"name": "Hoja de eventos 3",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "PlacaBasetxt",
+					"sid": 133924372530013,
+					"parameters": {
+						"text": "\"Placa Base\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "PlacaBasetxt",
+					"sid": 682858551846265
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "CPUtxt",
+					"sid": 399013930301393,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "PlacaBase",
+					"sid": 140573627687076,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 658187946335035
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "CPUtxt",
+					"sid": 310888131632188,
+					"parameters": {
+						"text": "\"cpu\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "CPUtxt",
+					"sid": 672452697463759
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Disipadortxt",
+					"sid": 109446668641387,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "CPU",
+					"sid": 126938957275648,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 812410097669178
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "Disipadortxt",
+					"sid": 500917932581431,
+					"parameters": {
+						"text": "\"disipador\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Disipadortxt",
+					"sid": 868109997544098
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "RAMtxt",
+					"sid": 947005640442148,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Disipador",
+					"sid": 871095540325536,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 351754747533920
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "RAMtxt",
+					"sid": 578766436673936,
+					"parameters": {
+						"text": "\"ram\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "RAMtxt",
+					"sid": 384032692061556
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Gráficatxt",
+					"sid": 273464184614386,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "RAM",
+					"sid": 222034635954283,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 848415367164914
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "Gráficatxt",
+					"sid": 243176790806286,
+					"parameters": {
+						"text": "\"gráfica\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Gráficatxt",
+					"sid": 218762793101681
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "FuenteDeAlimentacióntxttxt",
+					"sid": 466052396383197,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Gráfica",
+					"sid": 459572222944419,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 225920810893102
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "FuenteDeAlimentacióntxttxt",
+					"sid": 933746383788353,
+					"parameters": {
+						"text": "\"fuente de alimentación\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "FuenteDeAlimentacióntxttxt",
+					"sid": 194957167388724
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "FuenteDeAlimentación",
+					"sid": 621494704577817,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 857449992836295
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlacaBase",
+					"sid": 327602919098161,
+					"parameters": {
+						"object": "Objetivoplacabase"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "drop",
+					"objectClass": "PlacaBase",
+					"sid": 622754004632781,
+					"behaviorType": "ArrastrarYSoltar"
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "PlacaBase",
+					"sid": 663334356518428,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "PlacaBase",
+					"sid": 590340840682702,
+					"parameters": {
+						"x": "154",
+						"y": "207"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "CPU",
+					"sid": 739273535506208,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-maximum",
+					"objectClass": "BarraDeProgreso",
+					"sid": 676592721391707,
+					"parameters": {
+						"maximum": "120"
+					}
+				},
+				{
+					"id": "set-progress",
+					"objectClass": "BarraDeProgreso",
+					"sid": 561720612596143,
+					"parameters": {
+						"value": "20"
+					}
+				}
+			],
+			"sid": 855148727356182
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "CPU",
+					"sid": 242680813958141,
+					"parameters": {
+						"object": "ObjetivoCPUyDisipador"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "drop",
+					"objectClass": "CPU",
+					"sid": 614600350981943,
+					"behaviorType": "ArrastrarYSoltar"
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "CPU",
+					"sid": 807337850319883,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "CPU",
+					"sid": 412245207702259,
+					"parameters": {
+						"x": "160 ",
+						"y": "153"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Disipador",
+					"sid": 223722181164313,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-progress",
+					"objectClass": "BarraDeProgreso",
+					"sid": 560425646213223,
+					"parameters": {
+						"value": "40"
+					}
+				}
+			],
+			"sid": 574744896363365
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Disipador",
+					"sid": 916885200531401,
+					"parameters": {
+						"object": "ObjetivoCPUyDisipador"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "drop",
+					"objectClass": "Disipador",
+					"sid": 775728254279109,
+					"behaviorType": "ArrastrarYSoltar"
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Disipador",
+					"sid": 951899021098885,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Disipador",
+					"sid": 350900943513617,
+					"parameters": {
+						"x": "160",
+						"y": "153"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "RAM",
+					"sid": 626952377078716,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-progress",
+					"objectClass": "BarraDeProgreso",
+					"sid": 150980897060054,
+					"parameters": {
+						"value": "60"
+					}
+				}
+			],
+			"sid": 165148237838010
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "RAM",
+					"sid": 846676369645144,
+					"parameters": {
+						"object": "ObjetivoRAM"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "drop",
+					"objectClass": "RAM",
+					"sid": 801482599854336,
+					"behaviorType": "ArrastrarYSoltar"
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "RAM",
+					"sid": 187229156364566,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "RAM",
+					"sid": 788381620516860,
+					"parameters": {
+						"x": "236",
+						"y": "139"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Gráfica",
+					"sid": 297198734417285,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-progress",
+					"objectClass": "BarraDeProgreso",
+					"sid": 317764641912754,
+					"parameters": {
+						"value": "80"
+					}
+				}
+			],
+			"sid": 348509749026046
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Gráfica",
+					"sid": 331285153299406,
+					"parameters": {
+						"object": "ObjetivoGrafica"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "drop",
+					"objectClass": "Gráfica",
+					"sid": 893546896874516,
+					"behaviorType": "ArrastrarYSoltar"
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Gráfica",
+					"sid": 500260429706040,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Gráfica",
+					"sid": 625742225919039,
+					"parameters": {
+						"x": "151",
+						"y": "362"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "FuenteDeAlimentación",
+					"sid": 658837701476072,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-progress",
+					"objectClass": "BarraDeProgreso",
+					"sid": 991913894073925,
+					"parameters": {
+						"value": "100"
+					}
+				}
+			],
+			"sid": 862248746355185
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "FuenteDeAlimentación",
+					"sid": 303909986502637,
+					"parameters": {
+						"object": "ObjetivoFuenteDeAlimentación"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "drop",
+					"objectClass": "FuenteDeAlimentación",
+					"sid": 431400077886000,
+					"behaviorType": "ArrastrarYSoltar"
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "FuenteDeAlimentación",
+					"sid": 541397663101337,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "FuenteDeAlimentación",
+					"sid": 262394829963141,
+					"parameters": {
+						"x": "326",
+						"y": "353"
+					}
+				},
+				{
+					"id": "set-progress",
+					"objectClass": "BarraDeProgreso",
+					"sid": 147330810532373,
+					"parameters": {
+						"value": "120"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Completado",
+					"sid": 267909562020793,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 205077681783522
+		}
+	],
+	"sid": 876203487440069
+}

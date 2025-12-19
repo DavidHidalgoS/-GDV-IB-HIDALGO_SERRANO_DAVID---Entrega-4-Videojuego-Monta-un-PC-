@@ -1,0 +1,81 @@
+{
+	"name": "Hoja de eventos 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "INICIAR",
+					"sid": 308230909307603
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 470118304248318,
+					"parameters": {
+						"which": "next"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "CPU",
+					"sid": 450504757876692,
+					"parameters": {
+						"x": "620",
+						"y": "200"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Disipador",
+					"sid": 110395679815357,
+					"parameters": {
+						"x": "620",
+						"y": "200"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "FuenteDeAlimentación",
+					"sid": 523426772335359,
+					"parameters": {
+						"x": "620",
+						"y": "200"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Gráfica",
+					"sid": 243139128995086,
+					"parameters": {
+						"x": "620",
+						"y": "200"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "PlacaBase",
+					"sid": 924632150706500,
+					"parameters": {
+						"x": "620",
+						"y": "200"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "RAM",
+					"sid": 894091563026241,
+					"parameters": {
+						"x": "620",
+						"y": "200"
+					}
+				}
+			],
+			"sid": 488733383498311
+		}
+	],
+	"sid": 733879560759268
+}

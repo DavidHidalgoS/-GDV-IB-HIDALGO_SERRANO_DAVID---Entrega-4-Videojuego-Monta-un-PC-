@@ -1,0 +1,27 @@
+{
+	"name": "Hoja de eventos 2",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Entendido",
+					"sid": 533492321570462
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 562665761055328,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 293022271028578
+		}
+	],
+	"sid": 978153127736336
+}
